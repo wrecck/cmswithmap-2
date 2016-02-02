@@ -1,0 +1,44 @@
+<div class="search_box_wide <?php echo $page_id;?>">
+<form action="/search/" method="get" name="search_form"  id="search_form" onSubmit="return submitSearch();">
+  <div class="main_content_width">
+		<select style="max-width:280px;" name="category" id="category"  class="form-control">
+		<option value="">Browse</option>
+		<option value="all">All</option>
+		<?php echo $produceCategory;?>
+		</select>
+		<input name="produce" id="produce_<?php echo $page_id;?>"  style="max-width:280px;" type="text"   class="form-control" placeholder="Search for produce">
+		<input name="location" id="location_<?php echo $page_id;?>"  style="max-width:280px;" type="text"   class="form-control" placeholder="Location: Street name, Post code">
+		<input type="submit"  class="btn btn-tab btn-primary" type="button" name="submit" 
+		style="max-width: 150px; margin-left: 0px; padding-top: 6px; padding-bottom: 6px;" value="Search">
+  </div>
+
+</form>
+<script>
+
+$('#location_<?php echo $page_id;?>').autocomplete({
+	valueKey:'title',
+	source:[{
+		url:"<?php echo $defaultUrl;?>/ajax.php?action=location_ajax_search&key=%QUERY%",
+	
+		type:'remote',
+		getValue:function(item){
+			return item.title
+		},
+	}]
+});
+
+$('#produce_<?php echo $page_id;?>').autocomplete({
+	valueKey:'title',
+	source:[{
+		url:"<?php echo $defaultUrl;?>/ajax.php?action=produce_ajax_search&key=%QUERY%",
+		type:'remote',
+		getValue:function(item){
+			return item.title
+		}, /*
+		ajax:{
+			dataType : 'jsonp'
+		}*/
+	}]
+});
+</script>
+</div>  

@@ -1,0 +1,477 @@
+.my_listing_left {
+    background-color: #fafafa;
+    float: left;
+    min-height: 400px;
+    width: 55%;
+	padding: 10px;
+}
+
+.my_listing_right {
+    border: 1px solid #fafafa;
+    float: left;
+    margin-left: 10px;
+    padding: 5px;
+    width: 44%;
+}
+
+.search_listing_left {
+    background-color: #fafafa;
+    float: left;
+    min-height: 400px;
+    width: 40%;
+	padding: 10px;
+}
+
+.search_listing_left  .listing_text{
+   width: 320px !important;
+   height: 65px;
+}
+.search_listing_right {
+    border: 1px solid #fafafa;
+    float: left;
+    margin-left: 10px;
+    padding: 5px;
+    width: 55%;
+}
+
+.search_listing_left  .listing_text {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.main_wrap{max-width: 500px; margin: 0 auto 0; background: #ffffff; border-radius: 3px; overflow: hidden; padding-bottom:20px;}
+.main_wrap_pad{padding: 25px;}
+.main_content_width{width:80%; margin:auto;}
+.add_new_listing_left {
+    float: left;
+    width: 60%;
+	padding-right: 20px;
+}
+.logo {
+    color: #006600 !important;
+    font-family: "Trebuchet MS";
+    font-size: 38px !important;
+    font-weight: bold;
+    text-shadow: 3px 2px 4px #308014;
+}
+
+.logo > span {
+    color: #333;
+}
+.logo:hover{
+  color:#006600; text-decoration:none;
+}
+
+.add_new_listing_right {
+    background-color: #f5f5f5;
+    float: left;
+    padding: 0px 20px 10px;
+    width: 39.5%;
+}
+
+.add_new_listing_right_left {
+    float: left;
+    width: 48%;
+}
+
+.add_new_listing_right_right {
+    float: right;
+    width: 48%;
+}
+
+
+.add_new_listing_middle {
+    float: left;
+    width: 100%;
+}
+
+.form-control.half {
+    float: left;
+    margin-bottom: 17px;
+    margin-right: 3px;
+    width: 45%;
+}
+
+.form-control.full {
+    float: left;
+    margin-bottom: 17px;
+    margin-right: 3px;
+    width: 90%;
+}
+
+.required {
+    color: red;
+    float: left;
+    margin-right: 15px;
+}
+
+.main_wrap hr {
+    border: 1px solid #009900;
+    float: left;
+    width: 100%;
+}
+
+.add_new_listing_middle h2 {
+    margin-bottom: 10px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+}
+
+h2.home_middle {
+    float: left;
+    font-family: "The Girl Next Door",cursive;
+    font-size: 34px;
+}
+
+.home_middle.top_h2 {
+    margin-top: 0;
+}
+.home_middle_blocks {
+	background-color: #4cbb17 /* #00FF99*/;
+	float: left;
+	padding: 20px;
+	width: 50%;
+	font-size: 17px;
+	min-height: 200px;
+	line-height: 23px;
+}
+
+.circle {
+    background-color: #faffff;
+    border-radius: 80px;
+    height: 100px;
+    margin-left: -115px;
+    margin-top: 30px;
+    position: absolute;
+    width: 100px;
+}
+
+.home_middle_blocks.two, .home_middle_blocks.four{
+    padding-left: 60px;
+}
+
+.home_middle_blocks.one, .home_middle_blocks.three {
+    border-right: 5px solid #faffff;
+}
+
+
+.home_middle_blocks.two > p,
+.home_middle_blocks.four > p,
+{
+    padding-left: 20px;
+}
+
+
+
+.home_middle_blocks > a {
+    background-color: #faffff;
+    color: #333;
+    float: left;
+    font-size: 14px !important;
+    font-weight: normal;
+    margin-left: 35%;
+    padding: 5px;
+    text-align: center;
+    width: 200px !important;
+}
+
+.home_middle_blocks > p {
+    height: 110px;
+    padding-right: 30px;
+	 text-align: justify;
+}
+
+.form-control.threeforths {
+    float: left;
+    margin-right: 3px;
+    width: 20%;
+}
+
+.add_new_listing_right .check_text {
+    float: left;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.add_new_listing_right .checkbox {
+    float: left;
+    margin-right: 5px;
+	margin-bottom: 12px;
+}
+
+.add_new_listing_right_full {
+    float: left;
+    width: 100%;
+}
+
+.add_new_listing_right_full .form-control.half {
+    font-size: 11px;
+    height: 30px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    padding-bottom: 0 !important;
+    padding-left: 3px;
+    padding-top: 0;
+    width: 44%;
+}
+
+.is_checkbox .checkbox {
+    float: left;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}
+
+.map_div {
+    float: left;
+    width: 68%;
+	margin-bottom: 20px;
+}
+
+.mappreview {
+    border: 1px solid #ccc;
+    color: #333;
+    float: left;
+    height: 400px;
+    margin-top: 20px;
+    padding-top: 160px;
+    text-align: center;
+    width: 100%;
+}
+
+.mappreview_all {
+    border: 1px solid #ccc;
+    color: #333;
+    float: left;
+    min-height:400px;
+    margin-top: 00px;
+    padding-top: 160px;
+    text-align: center;
+    width: 100%;
+	height:100%;
+}
+
+.image_div {
+    float: left;
+    margin-right: 20px;
+    width: 28%;
+}
+
+.is_checkbox .check_text {
+    float: left;
+    font-size: 12px;
+    padding-top: 5px;
+    text-align: left;
+    width: 150px;
+}
+
+#period_availability {
+    float: left;
+    margin-right: 3px;
+    width: 80%;
+}
+
+.is_checkbox{
+float:left;width:60%; margin-top:20px; margin-top:20px; margin-bottom:20px; text-align:center !important
+}
+
+.form-control.small {
+    float: left;
+    margin-right: 3px;
+    width: 15%;
+}
+
+#additional_notes {
+    margin-top: 20px;
+    width: 400px;
+}
+
+.add_new_listing_right_right .form-control.half {
+    font-size: 11px;
+    margin-right: 10px;
+    padding-left: 3px;
+    width: 44%;
+}
+
+.add_new_listing_right_right .form-control.half {
+    font-size: 11px;
+    height: 30px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    padding-bottom: 0 !important;
+    padding-left: 3px;
+    padding-top: 0;
+    width: 44%;
+}
+
+/*my listing page*/
+.listing_image {
+    float: left;
+    margin-right: 10px;
+}
+
+.listing_image img {
+    height: 60px;
+    width: 80px;
+}
+
+.listing_text {
+    border-bottom: 2px solid green;
+    float: left;
+    height: 90px;
+    width: 400px;
+}
+
+
+
+.listing_row_title {
+    font-weight: bold;
+}
+.listing_row_title > span {
+    font-weight: normal;
+    margin-left: 0px;
+}
+
+.listing_row_subtitle {
+    float: left;
+}
+
+.listing_options {
+    float: left;
+}
+
+.listing_main_row {
+    float: left;
+    margin-top: 20px;
+}
+
+.status {
+    color: #009900;
+    font-size: 14px;
+}
+
+.big_image_slide{
+  width: 100%; min-height: 460px; background: url("/uploads/slides/slide1.jpg") repeat scroll 0% 0% transparent; float: left;
+   padding-top: 100px;
+	  text-align: center;
+	  color: #fff;
+}
+
+.search_box_wide {
+ 
+    background-image: url("/templates/default/images/search_box_wide_bg.png");
+    margin-top: 350px;
+    padding-bottom: 45px;
+    padding-top: 45px;
+    position: absolute;
+    width: 100%;
+	
+	
+}
+
+.search_box_wide input, .search_box_wide select {
+    float: left;
+    margin-left: 15px;
+
+    width: 90% !important;
+}
+
+.social_icons_links {
+    margin: auto;
+    width: 100%;
+}
+
+.social_icons_links img {
+    width: 50px;
+}
+
+.dashboard .social_icons_links,
+.my-listing .social_icons_links,
+.edit-listing .social_icons_links,
+.add-new-listing .social_icons_links,
+.profile .social_icons_links
+{
+    display: none;
+}
+
+.listingbut {
+    margin-top: 3px;
+    padding: 5px !important;
+    width: 80px;
+}
+.top_links {
+    font-size: 15px !important;
+    margin-top: 18px;
+}
+
+.big_image_slide h3 {
+    color: #fff;
+    font-size: 39px;
+    margin: auto auto;
+    text-align: center;
+    width: 100% !important;
+}
+
+.big_image_slide h4 {
+    color: #fff;
+    font-size: 21px;
+    font-weight: normal;
+    margin: 10px auto auto;
+    text-align: center;
+    width: 100% !important;
+}
+
+.hr_top {
+    border: 2px solid #fff;
+    margin: 20px auto 20px;
+    width: 70%;
+}
+
+.hr_bottom {
+    border: 2px solid #fff;
+    margin: 20px auto 00px;
+    width: 70%;
+}
+#category {
+    margin-left: 98px; margin-right: 10px;
+}
+
+
+.add_new_listing_right_left.view_details {
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+
+.loop_count {
+    background-color: #4cbb17;
+    font-family: trebuchet ms;
+    font-size: 12px;
+    font-weight: bold;
+    height: 20px;
+    padding: 1px;
+    position: absolute;
+    text-align: center;
+    width: 20px;
+    z-index: 101010;
+	opacity: 0.8;
+}
+
+/*pagination*/
+.field.checkboxestype {
+    font-size: 13px !important;
+}
+
+.pagination .current {
+    background-color: #009900;
+    color: #fff;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.pagination {
+    float: left;
+    width: 100%;
+}
+

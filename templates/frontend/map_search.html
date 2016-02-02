@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Google Map Search</title>
+
+
+  </head>
+
+  <body>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"> <!-- not this -->
+    <!-- Custom styles for this template -->
+    <link href="map_search/css/starter-template.css" rel="stylesheet">
+	<link href="map_search/css/ms-style.css" rel="stylesheet">
+	
+		<div class="map-search">
+			<div class="side-bar">
+
+				<div id="ms-listings"></div>
+				<div id="ms-pagination"></div>
+			</div>
+			<div class="map">
+				<div id="map-canvas">
+	  
+				</div>
+			</div>
+		</div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- try this -->
+    <script src="map_search/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+	<script type="text/javascript" src="map_search/js/jquery.mapSearch.min.js"></script>
+	<script>
+		(function ( $ ) {
+
+			$('#map-canvas').mapSearch({
+			    
+				initialPosition:[48.44146, -123.32981],
+				request_uri : 'http://localhost/map_search.php',  //'http://sbadb.herokuapp.com/v1/bizs',
+			
+				search_box : false,
+				listing_template : function(listing){	
+										return '<div class="listing">'
+											+     '<h3>'+listing.name + '</h3>'
+											+	  '<div class="row">'
+											+	       '<div class="col-sm-2">'
+											+	  			'<img class="thumbnail img-responsive" src="http://dummyimage.com/150x150/000/fff.jpg">'
+											+          '</div>'
+											+	       '<div class="col-sm-5">'
+											+     			'<p><strong>Address : </strong>' + listing.address1+ '</p>'
+											+               '<p>'+listing.city+', '+listing.state+' '+listing.zip+'</p>'
+											+               '<p>Reg Year: ' + listing.yrest+'</p>'
+											+          '</div>'
+
+											+	  '</div>'
+											+  '</div>';
+									},
+			});
+		}( jQuery ));
+		
+	</script>
+  </body>
+</html>
